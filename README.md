@@ -128,11 +128,11 @@ GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;
 2. Use `cd /var/www` to move to the /var/www directory
 3. Create the application directory `sudo mkdir FlaskApp`
 4. Move inside this directory using `cd FlaskApp`
-5. Clone the Catalog App to the virtual machine `git clone https://github.com/kongling893/Item_Catalog_UDACITY.git`
-6. Rename the project's name `sudo mv ./Item_Catalog_UDACITY ./FlaskApp`
+5. Clone the Catalog App to the virtual machine `https://github.com/Yanlingwu95/Item-Catalog.git`
+6. Rename the project's name `sudo mv ./Item_Catalog ./FlaskApp`
 7. Move to the inner FlaskApp directory using `cd FlaskApp`
-8. Rename `website.py` to `__init__.py` using `sudo mv website.py __init__.py`
-9. Edit `database_setup.py`, `website.py` and `functions_helper.py` and change `engine = create_engine('sqlite:///toyshop.db')` to `engine = create_engine('postgresql://catalog:password@localhost/catalog')`
+8. Rename `app.py` to `__init__.py` using `sudo mv website.py __init__.py`
+9. Edit `database_setup.py`, `app.py` and `database_init.py` and change `engine = create_engine('sqlite:///toyshop.db')` to `engine = create_engine('postgresql://catalog:password@localhost/catalog')`
 10. Install pip `sudo apt-get install python-pip`
 11. Use pip to install dependencies `sudo pip install -r requirements.txt`
 12. Install psycopg2 `sudo apt-get -qqy install postgresql python-psycopg2`
